@@ -1,22 +1,86 @@
-body {
-	background-color: LightGrey;
+
+html {
+  box-sizing: border-box;
+  
 }
-dive {
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+
+	font-family: 'Roboto', sans-serif;
+}
+/*div {
 	border: 1px solid Chocolate;
+}*/
+html {
+	-webkit-font-smoothing: antialiased;
 }
 .top-navigation {
 	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
 }
 .top-navigation > .content {
-	width: 970px;
 	height: 70px;
+	width: 970px;
 	margin: 0 auto;
 }
 .top-navigation .content .links {
 	float: right;
+		margin-top: 30px;
 }
 .top-navigation .content .links li {
 	float: right;
 	list-style: none;
-	margin-left: 15px;
+	margin-left: 30px;
+}
+.top-navigation .logo {
+	margin-top: 15px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .content .links li {
+font-size: 16px;
+color: #838994;
+letter-spacing: 0.03em;
+}
+.introduction {
+	background-image: url('../images/first-background.jpg');
+	background-position: 0 bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 665px;
+}
+.content {
+	color: white;
+	text-align: center;
+}
+.abc {
+	padding-top: 75px;
+}
+button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    background-color: #f15a29;
+    font-size: 1.2rem;
+    color: White;
+    margin: 0 auto;
+    margin-top: 1.563rem;
+}
+.cases .devices {
+    width: 33%;
+    display: inline-block;
+    /* styles to assist with debugging 
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 4em;*/
+}
+.cases {
+	    text-align: center;
 }
